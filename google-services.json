@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "458893016808",
+    "project_id": "ensatelibrary",
+    "storage_bucket": "ensatelibrary.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:458893016808:android:deefd5bd097abbc9bdd35d",
+        "android_client_info": {
+          "package_name": "com.ENSAteLibrary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "458893016808-0cc884pb5i5bfve07v80tjruri3g4rs3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCi7lZBsicRXjDUbUi_vUWN8tLoFSPDScM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "458893016808-0cc884pb5i5bfve07v80tjruri3g4rs3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
