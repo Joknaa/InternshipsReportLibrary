@@ -1,0 +1,67 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Fujitsu\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add expo-document-picker firabase@9.6.3
+
+PATH: 
+  C:\Program Files (x86)\VMware\VMware Workstation\bin\;O:\OracleDatabaseXE18c\dbhomeXE\bin;C:\Python39\Scripts\;C:\Python39\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\php;C:\Program Files\MongoDB\Server\4.4\bin;C:\Program Files\heroku\bin;C:\Program Files\Java\jdk-17.0.1\bin;C:\Program Files\Java\scripts;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\dotnet\;C:\Users\Fujitsu\AppData\Roaming\npm;C:\Users\Fujitsu\AppData\Local\Android\Sdk\platform-tools;C:\Users\Fujitsu\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Fujitsu\AppData\Local\Programs\Python\Python310\;C:\Users\Fujitsu\AppData\Local\Microsoft\WindowsApps;C:\Users\Fujitsu\AppData\Local\JetBrains\PyCharm 2021.3\bin;;C:\Users\Fujitsu\AppData\Local\GitHubDesktop\bin;C:\Users\Fujitsu\.dotnet\tools;C:\Users\Fujitsu\AppData\Local\JetBrains\PhpStorm 2021.3.1\bin;;C:\Users\Fujitsu\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Fujitsu\AppData\Local\Android\Sdk\platform-tools;
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  14.15.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/firabase: Not found
+      at Request.params.callback [as _callback] (C:\Users\Fujitsu\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:67029:18)
+      at Request.self.callback (C:\Users\Fujitsu\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140883:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (C:\Users\Fujitsu\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141855:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (C:\Users\Fujitsu\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141777:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (_stream_readable.js:1327:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+npm manifest: 
+  {
+    "name": "test",
+    "version": "1.0.0",
+    "main": "node_modules/expo/AppEntry.js",
+    "scripts": {
+      "start": "expo start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "web": "expo start --web",
+      "eject": "expo eject"
+    },
+    "dependencies": {
+      "@react-native-firebase/app": "^14.2.2",
+      "@react-navigation/native": "^6.0.6",
+      "@react-navigation/native-stack": "^6.2.5",
+      "expo": "~44.0.0",
+      "expo-status-bar": "~1.2.0",
+      "firebase": "^9.6.3",
+      "react": "17.0.1",
+      "react-dom": "17.0.1",
+      "react-native": "0.64.3",
+      "react-native-router-flux": "^4.3.1",
+      "react-native-safe-area-context": "3.3.2",
+      "react-native-screens": "~3.10.1",
+      "react-native-web": "0.17.1",
+      "yarn": "^1.22.17"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.12.9"
+    },
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
