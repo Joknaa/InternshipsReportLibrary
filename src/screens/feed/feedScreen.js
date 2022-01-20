@@ -1,10 +1,11 @@
 import { React, useState, useEffect } from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, Button } from 'react-native'
 import { db } from '../../../firebase'
 import { collection, getDocs, } from "firebase/firestore";
 import ListItem from '../../components/feed/listItem/listItem';
 
-const feedScreen = () => {
+
+const feedScreen = ({ navigation }) => {
     const reportsCollection = collection(db, 'reports');
     const [reports, setReports] = useState([]);
 
@@ -17,18 +18,30 @@ const feedScreen = () => {
         getReports();
     }, []);
 
+    const addDocument = () => {
+        navigation.navigate('AddDocument');
+    }
+
+
     return (
         <View style={styles.WholePage}>
+            <Button title="Add" onPress={addDocument} />
             <Text>Reports List: </Text>
 
-            {reports.map(user => {
+            {reports.map(report => {
                 return (
-                    <ListItem name={user.name} major={user.major} type={user.type} description={user.description} />
+                    <ListItem
+                        name={report.name}
+                        major={report.major}
+                        type={report.type}
+                        description={report.description}
+                        navigation={navigation} />
                 )
             })}
         </View >
     )
 }
+
 
 
 export default feedScreen

@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import loginScreen from './src/screens/auth/login/loginScreen';
 import feedScreen from './src/screens/feed/feedScreen';
 import AddDocumentScreen from './src/screens/AddDocument/AddDocumentScreen';
+import MoreInfo from './src/screens/MoreInfo/moreInfoScreen';
 
 
 const Stack = createNativeStackNavigator();
@@ -11,18 +12,10 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen
-          style={styles.container}
-          name="Add Document"
-          component={AddDocumentScreen} />
-        <Stack.Screen
-          style={styles.container}
-          name="Reports List"
-          component={feedScreen} />
-        <Stack.Screen
-          options={{ headerShown: false }}
-          name="login"
-          component={loginScreen} />
+        <Stack.Screen style={styles.container} name="Feed" component={feedScreen} />
+        <Stack.Screen style={styles.container} name="AddDocument" component={AddDocumentScreen} />
+        <Stack.Screen style={styles.container} name="MoreInfo" component={MoreInfo} />
+        {/* <Stack.Screen style={styles.container} name="Login" component={loginScreen} /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );
