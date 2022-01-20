@@ -12,7 +12,6 @@ const listItem = (props) => {
             description: props.description
         })
         // console.log(props)
-
     };
 
     return (
@@ -22,6 +21,8 @@ const listItem = (props) => {
             <Text>Type: {props.type}</Text>
             <Text>Description: {props.description}</Text>
             <Button style={styles.readMoreButton} title="Read More" onPress={seeMoreDetails} />
+            {/* <Tab.Screen id={"id"} name={"MoreInfo"} component={DocumentInfo} /> */}
+
         </View >
     )
 };

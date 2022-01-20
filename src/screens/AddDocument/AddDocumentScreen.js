@@ -1,5 +1,5 @@
 import { React, useState } from 'react'
-import { StyleSheet, View, Text, Button } from 'react-native'
+import { StyleSheet, View, Text, Button, TextInput } from 'react-native'
 import { collection, addDoc } from 'firebase/firestore';
 import storage from '@react-native-firebase/storage';
 import { db } from '../../../firebase'
@@ -46,6 +46,11 @@ const AddDocumentScreen = ({ navigation }) => {
         setImage(null);
     };
     const addDocument = async () => {
+        console.log(setNewName);
+        console.log(setNewMajor);
+        console.log(setNewType);
+        console.log(setNewDescription);
+
         await addDoc(reportsCollection, { name: newName, major: newMajor, type: newType, description: newDescription })
             .then(
                 console.log("User created")
@@ -77,12 +82,12 @@ const AddDocumentScreen = ({ navigation }) => {
         <View style={styles.WholePage}>
             <Button title="Back" onPress={goBack} />
             <Text>Add Document Screen</Text>
-            <input type="text" placeholder="Name" onChange={(event) => { setNewName(event.target.value) }} />
-            <input type="text" placeholder="Major" onChange={(event) => { setNewMajor(event.target.value) }} />
-            <input type="text" placeholder="Type" onChange={(event) => { setNewType(event.target.value) }} />
-            <input type="text" placeholder="Description" onChange={(event) => { setNewDescription(event.target.value) }} />
+            <TextInput type="text" placeholder="Name" onChangeText={(event) => { setNewName(event.target.value) }} />
+            <TextInput type="text" placeholder="Major" onChangeText={(event) => { setNewMajor(event.target.value) }} />
+            <TextInput type="text" placeholder="Type" onChangeText={(event) => { setNewType(event.target.value) }} />
+            <TextInput type="text" placeholder="Description" onChangeText={(event) => { setNewDescription(event.target.value) }} />
             <Button title="Select Document" onPress={chooseDocument} />
-            <Button title='Submit' onPress={uploadImage} />
+            <Button title='Submit' onPress={addDocument} />
         </View>
     )
 }
