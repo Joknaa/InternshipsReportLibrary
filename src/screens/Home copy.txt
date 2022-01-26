@@ -17,20 +17,23 @@ export default class Home extends React.Component {
                     paddingHorizontal: 20
                 }}
             >
+                {/* Header */}
                 <View style={{
                     flexDirection: "row",
                     width: "100%",
                     marginTop: 40,
                     alignItems: "center"
                 }}>
+                    {/* Screen Title */}
                     <View style={{
                         width: "50%"
                     }}>
                         <Text style={{
                             fontFamily: "Bold",
                             fontSize: 22
-                        }}>Furniture</Text>
+                        }}>Reports</Text>
                     </View>
+                    {/* Profile Icon */}
                     <View style={{
                         width: "50%",
                         alignItems: "flex-end"
@@ -42,12 +45,15 @@ export default class Home extends React.Component {
                     </View>
                 </View>
 
+
+                {/* Search Bar & Filter BUtton */}
                 <View style={{
                     flexDirection: "row",
                     alignItems: "center",
                     width: "100%",
                     marginVertical: 30
                 }}>
+                    {/* SearchBar */}
                     <View style={{
                         flexDirection: "row",
                         alignItems: "center",
@@ -64,7 +70,7 @@ export default class Home extends React.Component {
                             color="#4f4a4a"
                         />
                         <TextInput
-                            placeholder="Search unique furniture..."
+                            placeholder="Search reports ..."
                             style={{
                                 fontFamily: "Medium",
                                 paddingHorizontal: 10,
@@ -73,7 +79,7 @@ export default class Home extends React.Component {
                         />
                     </View>
 
-
+                    {/* Filter Button */}
                     <View style={{
                         alignItems: "center",
                         elevation: 2,

@@ -9,7 +9,6 @@ const feedScreen = ({ navigation }) => {
     const reportsCollection = collection(db, 'reports');
     const [reports, setReports] = useState([]);
 
-
     useEffect(() => {
         const getReports = async () => {
             const data = await getDocs(reportsCollection);
@@ -21,7 +20,6 @@ const feedScreen = ({ navigation }) => {
     const addDocument = () => {
         navigation.navigate('AddDocument');
     }
-
 
     return (
         <SafeAreaView style={styles.WholePage}>
